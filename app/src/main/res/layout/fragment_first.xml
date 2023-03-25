@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:id="@+id/navFl"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:layout_above="@id/scrollView2"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/nav_title"
+            android:scaleType="fitXY" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="@integer/material_motion_duration_long_1"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="10dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_selector2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end">
+
+                                <TextView
+                                    android:id="@+id/b1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:letterSpacing=".1"
+                                    android:layout_gravity="center"
+                                    android:shadowColor="#CE5512"
+                                    android:shadowDx="5"
+                                    android:shadowDy="5"
+                                    android:shadowRadius="10"
+                                    android:foregroundGravity="top"
+                                    android:textAllCaps="false"
+                                    android:textColor="#FFB77E"
+                                    android:textSize="45sp"
+                                    android:textStyle="bold"
+                                />
+
+                                <ImageView
+                                    android:id="@+id/tab_logo1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/tab1"
+                                />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                            />
+                        </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="10dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_selector2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/b2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing=".1"
+                                android:layout_gravity="center"
+                                android:shadowColor="#CE5512"
+                                android:shadowDx="5"
+                                android:shadowDy="5"
+                                android:shadowRadius="15"
+                                android:foregroundGravity="top"
+                                android:textAllCaps="false"
+                                android:textColor="#FFB77E"
+                                android:textSize="45sp"
+                                android:textStyle="bold"
+                            />
+                            <ImageView
+                                android:id="@+id/tab_logo2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/tab2"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="25sp"
+                    android:layout_marginVertical="15dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_selector2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end">
+
+                            <TextView
+                                android:id="@+id/b3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing=".1"
+                                android:shadowColor="#CE5512"
+                                android:shadowDx="5"
+                                android:shadowDy="5"
+                                android:layout_gravity="center"
+                                android:shadowRadius="15"
+                                android:text="@string/b3"
+                                android:textAllCaps="false"
+                                android:textColor="#FFB77E"
+                                android:textSize="45sp"
+                                android:textStyle="bold|normal" />
+
+                            <ImageView
+                                android:id="@+id/tab_logo3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foregroundGravity="top"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/tab3"
+                            />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="false">
+    <layer-list>
+        <item>
+            <shape>
+                <!--                    <solid android:color="@android:color/darker_gray" />-->
+                <corners android:radius="19dp" />
+            </shape>
+        </item>
+        <item >
+            <shape android:shape="rectangle">
+                <stroke android:color="#FFA367" android:width="6dp" />
+                <padding android:bottom="5dp" />
+                <gradient android:angle="270"  android:startColor="#011841" android:endColor="#0A0507"/>
+<!--                <gradient android:angle="270" android:endColor="#CE1B22" android:centerColor="#CE1B22" android:startColor="#BCBEBF" />-->
+                <corners android:topLeftRadius="40dp"
+                    android:topRightRadius="40dp"
+                    android:bottomRightRadius="40dp"
+                    android:bottomLeftRadius="40dp"/>
+                <padding android:bottom="10dp" android:left="10dp" android:right="5dp" android:top="10dp" />
+            </shape>
+        </item>
+    </layer-list>
+</item>
+<item android:state_pressed="true">
+    <layer-list>
+        <item>
+            <shape >
+                <!--                    <solid android:color="#102746" />-->
+                <corners android:radius="19dp" />
+            </shape>
+        </item>
+        <item >
+            <shape android:shape="rectangle">
+                <padding android:bottom="5dp" />
+                <stroke android:color="#9A9A9A" android:width="4dp" />
+                <gradient android:angle="270" android:endColor="#859C62" android:startColor="#859C62" />
+<!--                <gradient android:angle="270" android:endColor="#990000" android:centerColor="#FF0000" android:startColor="#414141" />-->
+                <corners android:topLeftRadius="180dp"
+                    android:topRightRadius="180dp"
+                    android:bottomRightRadius="180dp"
+                    android:bottomLeftRadius="180dp"/>
+                <padding android:bottom="10dp" android:left="10dp" android:right="5dp" android:top="10dp" />
+            </shape>
+        </item>
+    </layer-list>
+</item>
+</selector>
